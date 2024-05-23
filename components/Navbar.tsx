@@ -57,7 +57,7 @@ const Navbar = () => {
       unsubscribe();
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLoggedIn]);
+  }, [isLoggedIn, loginStatus]);
 
   return (
     <header
