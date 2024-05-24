@@ -14,6 +14,7 @@ const Games: React.FC = () => {
     }
 
   }, [games, fetchGames]);
+
   const errHandler = (error: Error) => {
     console.error("Error for fetching Games Data", error);
 

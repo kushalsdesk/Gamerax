@@ -57,7 +57,7 @@ const Navbar = () => {
       unsubscribe();
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLoggedIn, loginStatus]);
+  }, [isLoggedIn]);
 
   return (
     <header
@@ -77,11 +77,11 @@ const Navbar = () => {
             href="/"
             className="flex flex-row items-center justify-between gap-1 "
           >
-            <span className="sr-only ">Operax</span>
+            <span className="sr-only ">Gamerax</span>
             <Image
               id="image"
-              width={35}
-              height={35}
+              width={25}
+              height={25}
               loading="lazy"
               src="/logo.png"
               alt="logo_img"
@@ -91,7 +91,7 @@ const Navbar = () => {
               className={`${scrolling ? "hidden" : "font-bold text-xl cursor-pointer z-10 "
                 }  `}
             >
-              Operax
+              Gamerax
             </label>
           </Link>
         </div>
