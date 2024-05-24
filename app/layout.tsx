@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Suspense } from "react";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Navbar, Background } from "@/components/exports";
 import Loading from "./loading";
 import { Providers } from "./providers";
@@ -30,7 +30,7 @@ export default function RootLayout({
           <Background>
             <div className="isolate px-6 pt-14 lg:px-8 ">
               {/**The Top and the Bottom Divs are for background */}
-              <Suspense fallback={<Loading />}>{children}</Suspense>
+              <Suspense fallback={<Loading />}>{children}<SpeedInsights /></Suspense>
             </div>
           </Background>
         </Providers>
